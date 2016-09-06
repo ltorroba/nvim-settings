@@ -15,23 +15,35 @@ Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
-" Remaps
-let mapleader = ","
-
 " Load Plug(in) configs
-let vimsettings = '~/.config/nvim/settings'
+let plugsettings = '~/.config/nvim/settings/plugins'
 let uname = system("uname -s")
 
-for fpath in split(globpath(vimsettings, '*.vim'), '\n')
+for fpath in split(globpath(plugsettings, '*.vim'), '\n')
 
-  if (fpath == expand(vimsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
+  if (fpath == expand(plugsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
     continue " skip mac mappings for linux
   endif
 
-  if (fpath == expand(vimsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
+  if (fpath == expand(plugsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
     continue " skip linux mappings for mac
   endif
 
   exe 'source' fpath
 endfor
 
+" Load Pesonal configs
+let personalsettings = '~/.config/nvim/settings/personal'
+
+for fpath in split(globpath(personalsettings, '*.vim'), '\n')
+
+  if (fpath == expand(personalsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
+    continue " skip mac mappings for linux
+  endif
+
+  if (fpath == expand(personalsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
+    continue " skip linux mappings for mac
+  endif
+
+  exe 'source' fpath
+endfor
