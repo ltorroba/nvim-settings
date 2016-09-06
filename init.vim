@@ -5,6 +5,7 @@ filetype off
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bkad/CamelCaseMotion'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
