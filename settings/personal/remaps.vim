@@ -1,1 +1,2 @@
-let mapleader = ","
+nnoremap <Space> <nop>
+let mapleader = " "

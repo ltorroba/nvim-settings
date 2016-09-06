@@ -20,6 +20,13 @@ Plug 'Quramy/tsuquyomi'
 
 call plug#end()
 
+" Load Pesonal configs
+let personalsettings = '~/.config/nvim/settings/personal'
+
+for fpath in split(globpath(personalsettings, '*.vim'), '\n')
+  exe 'source' fpath
+endfor
+
 " Load Plug(in) configs
 let plugsettings = '~/.config/nvim/settings/plugins'
 let uname = system("uname -s")
@@ -34,12 +41,5 @@ for fpath in split(globpath(plugsettings, '*.vim'), '\n')
   "  continue " skip on mac
   "endif
 
-  exe 'source' fpath
-endfor
-
-" Load Pesonal configs
-let personalsettings = '~/.config/nvim/settings/personal'
-
-for fpath in split(globpath(personalsettings, '*.vim'), '\n')
   exe 'source' fpath
 endfor
