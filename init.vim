@@ -9,7 +9,8 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'myusuf3/numbers.vim'
+" Plug 'myusuf3/numbers.vim' " Not working for Neovim
+Plug 'zesme/numbers.vim'
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
