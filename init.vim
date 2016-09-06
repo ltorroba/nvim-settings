@@ -13,6 +13,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'neomake/neomake'
 
 call plug#end()
 
