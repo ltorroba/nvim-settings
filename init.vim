@@ -15,6 +15,8 @@ Plug 'myusuf3/numbers.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'neomake/neomake'
 Plug 'leafgarland/typescript-vim'
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Quramy/tsuquyomi'
 
 call plug#end()
 
