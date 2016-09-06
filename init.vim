@@ -22,13 +22,13 @@ let uname = system("uname -s")
 
 for fpath in split(globpath(plugsettings, '*.vim'), '\n')
 
-  if (fpath == expand(plugsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
-    continue " skip mac mappings for linux
-  endif
+  "if (fpath == expand(plugsettings) . "/mac-only.vim") && uname[:4] ==? "linux"
+  "  continue " skip on linux
+  "endif
 
-  if (fpath == expand(plugsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
-    continue " skip linux mappings for mac
-  endif
+  "if (fpath == expand(plugsettings) . "/linux-only.vim") && uname[:4] !=? "linux"
+  "  continue " skip on mac
+  "endif
 
   exe 'source' fpath
 endfor
@@ -37,14 +37,5 @@ endfor
 let personalsettings = '~/.config/nvim/settings/personal'
 
 for fpath in split(globpath(personalsettings, '*.vim'), '\n')
-
-  if (fpath == expand(personalsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
-    continue " skip mac mappings for linux
-  endif
-
-  if (fpath == expand(personalsettings) . "/yadr-keymap-linux.vim") && uname[:4] !=? "linux"
-    continue " skip linux mappings for mac
-  endif
-
   exe 'source' fpath
 endfor
