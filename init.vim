@@ -17,6 +17,7 @@ Plug 'neomake/neomake'
 Plug 'leafgarland/typescript-vim'
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Quramy/tsuquyomi'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
