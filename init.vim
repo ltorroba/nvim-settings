@@ -19,6 +19,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'Quramy/tsuquyomi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'lervag/vimtex'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
