@@ -20,6 +20,7 @@ Plug 'Quramy/tsuquyomi'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
