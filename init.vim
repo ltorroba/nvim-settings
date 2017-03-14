@@ -21,6 +21,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'kylef/apiblueprint.vim'
 
 call plug#end()
 
