@@ -33,6 +33,7 @@ Plug 'mattn/emmet-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kylef/apiblueprint.vim'
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+Plug 'posva/vim-vue'
 
 call plug#end()
 
