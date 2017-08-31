@@ -1,16 +1,6 @@
 set nocompatible
 filetype off
 
-function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
-    if has('nvim')
-      !cargo build --release
-    else
-      !cargo build --release --no-default-features --features json-rpc
-    endif
-  endif
-endfunction
-
 " Setup Plugs
 call plug#begin('~/.config/nvim/plugged')
 
@@ -32,7 +22,6 @@ Plug 'lervag/vimtex'
 Plug 'mattn/emmet-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kylef/apiblueprint.vim'
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 Plug 'posva/vim-vue'
 
 call plug#end()
