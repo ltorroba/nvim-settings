@@ -23,6 +23,7 @@ Plug 'mattn/emmet-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kylef/apiblueprint.vim'
 Plug 'posva/vim-vue'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 
