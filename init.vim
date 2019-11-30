@@ -24,6 +24,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'kylef/apiblueprint.vim'
 Plug 'posva/vim-vue'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'google/vim-jsonnet'
 
 " For better writing of text
 Plug 'reedes/vim-lexical'
