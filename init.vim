@@ -25,6 +25,10 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'posva/vim-vue'
 Plug 'Vimjas/vim-python-pep8-indent'
 
+" For better writing of text
+Plug 'reedes/vim-lexical'
+Plug 'reedes/vim-pencil'
+
 call plug#end()
 
 " Load Pesonal configs
