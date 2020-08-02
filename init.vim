@@ -28,7 +28,7 @@ Plug 'google/vim-jsonnet'
 
 " For better writing of text
 Plug 'reedes/vim-lexical'
-Plug 'reedes/vim-pencil'
+" Plug 'reedes/vim-pencil'
 
 call plug#end()
 
