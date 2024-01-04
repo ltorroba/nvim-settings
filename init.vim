@@ -27,6 +27,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'google/vim-jsonnet'
 Plug 'psf/black', { 'branch': 'stable' }
 " Plug 'puremourning/vimspector'
+Plug 'github/copilot.vim'
 
 " For better writing of text
 Plug 'reedes/vim-lexical'
