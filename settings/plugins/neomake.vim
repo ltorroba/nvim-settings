@@ -16,4 +16,4 @@ let g:neomake_python_flake8_maker = {
         \ '%A%f:%l: %t%n %m,' .
         \ '%-G%.%#',
     \ }
-let g:neomake_python_enabled_makers = ['flake8']
+let g:neomake_python_enabled_makers = ['flake8', 'mypy']
