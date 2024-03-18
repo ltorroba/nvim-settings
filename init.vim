@@ -25,6 +25,8 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'posva/vim-vue'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'google/vim-jsonnet'
+Plug 'psf/black', { 'branch': 'stable' }
+" Plug 'puremourning/vimspector'
 Plug 'github/copilot.vim'
 Plug 'psf/black', { 'branch': 'stable' }
 
